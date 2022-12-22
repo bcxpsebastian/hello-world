@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Compile"
+          command: "javac de/bcxp/Main.java"
+      - run:
           name: "Say hello"
           command: "java de.bcxp.Main"
 
